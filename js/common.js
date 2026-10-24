@@ -13,7 +13,7 @@
   var currentScript = document.currentScript;
   var SITE_ROOT = (function () {
     var src = currentScript ? currentScript.src : '';
-    var m = /^(.*?)JS\/common\.js(?:\?.*)?$/.exec(src);
+    var m = /^(.*?)[Jj][Ss]\/common\.js(?:\?.*)?$/.exec(src);
     var root = m ? m[1] : '';
     return root || './';
   })();

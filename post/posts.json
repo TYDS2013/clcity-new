@@ -22,22 +22,22 @@
 
   "slides": [
     {
-      "image": "Img/slide1.png",
+      "image": "img/slide1.png",
       "title": "翠林城中央公园改造方案公开征求意见，欢迎市民参与",
       "link": "pages/article.html?post=example.md"
     },
     {
-      "image": "Img/slide2.svg",
+      "image": "img/slide2.svg",
       "title": "城市轨道交通 2 号线站点周边环境提升工程顺利完成",
       "link": "pages/notice.html"
     },
     {
-      "image": "Img/slide3.svg",
+      "image": "img/slide3.svg",
       "title": "关于 11 月城市维护施工期间临时交通调整的公告",
       "link": "pages/notice.html"
     },
     {
-      "image": "Img/slide4.svg",
+      "image": "img/slide4.svg",
       "title": "秋季市民文化节将于本周末在翠林广场举行",
       "link": "pages/service.html"
     }
