@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>文章详情 · 翠林城</title>
+<link rel="icon" href="../img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../CSS/index-css.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">跳到主要内容</a>
+
+<header class="top-banner top-banner--small">
+  <img class="top-banner__bg" src="../img/banner.svg" alt="翠林城城市风貌">
+  <div class="top-banner__inner">
+    <div class="brand">
+      <img class="brand__mark" src="../img/favicon.svg" alt="翠林城图标" width="44" height="44">
+      <div class="brand__text">
+        <h1 class="brand__name">翠林城</h1>
+        <p class="brand__sub">翠林城 · 综合政务服务中心</p>
+      </div>
+    </div>
+    <div class="clock" id="siteClock">正在加载时间…</div>
+  </div>
+</header>
+
+<div class="toolbar">
+  <div class="toolbar__inner">
+    <nav class="main-nav" aria-label="主导航">
+      <ul>
+        <li><a href="../index.html">主页</a></li>
+        <li><a href="news.html">要闻</a></li>
+        <li><a href="service.html">服务</a></li>
+        <li><a href="feedback.html">反馈</a></li>
+        <li><a href="about.html">关于</a></li>
+      </ul>
+    </nav>
+    <form class="search" onsubmit="location.href='../index.html';return false;">
+      <input type="search" placeholder="搜索要闻…" aria-label="站内搜索">
+      <button type="submit">搜索</button>
+    </form>
+  </div>
+</div>
+
+<main class="container" id="main">
+  <nav class="breadcrumb" aria-label="面包屑">
+    <a href="../index.html">主页</a> &gt; <a href="news.html">要闻</a> &gt;
+    <span id="crumbTitle">文章</span>
+  </nav>
+
+  <div class="article-grid">
+    <article class="article-main">
+      <img class="article-cover" id="articleCover" src="" alt="" hidden>
+      <div class="article-body">
+        <h1 class="article-title" id="articleTitle">正在加载文章…</h1>
+        <div class="article-meta" id="articleMeta"></div>
+        <div class="md-content" id="articleContent"></div>
+      </div>
+    </article>
+
+    <!-- 右侧目录：固定在视口，随页面滚动保持可见 -->
+    <aside class="article-aside">
+      <nav class="toc" aria-label="文章目录">
+        <p class="toc-title">目录</p>
+        <div id="tocBox"><p class="toc-empty">正在生成目录…</p></div>
+      </nav>
+    </aside>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-bottom">
+    <div class="footer-bottom__inner">
+      <p>翠林城市民服务中心</p>
+      <p class="footer-bottom__links">
+        <a href="about.html">关于我们</a>
+        <a href="feedback.html">意见反馈</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script src="../JS/common.js"></script>
+<!-- marked.js 完整 Markdown 解析（支持表格、任务列表、删除线等 GFM 语法） -->
+<script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+<script src="../JS/article-js.js"></script>
+<script>
+  // 时钟
+  (function () {
+    var el = document.getElementById('siteClock');
+    var W = ['日','一','二','三','四','五','六'];
+    function p(n){return n<10?'0'+n:''+n;}
+    function t(){
+      if(!el) return;
+      var d = new Date();
+      el.textContent = d.getFullYear()+'年'+(d.getMonth()+1)+'月'+d.getDate()+'日 星期'+W[d.getDay()]+' '+p(d.getHours())+':'+p(d.getMinutes())+':'+p(d.getSeconds());
+    }
+    t(); setInterval(t,1000);
+  })();
+</script>
+</body>
+</html>

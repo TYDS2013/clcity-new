@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 240" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e9f6ee"/>
+      <stop offset="1" stop-color="#cfe8d8"/>
+    </linearGradient>
+    <linearGradient id="far" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b9dcc6"/>
+      <stop offset="1" stop-color="#a2d0b3"/>
+    </linearGradient>
+    <linearGradient id="near" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#83c199"/>
+      <stop offset="1" stop-color="#4f9c6d"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="240" fill="url(#sky)"/>
+  <g fill="#ffffff" opacity="0.72">
+    <ellipse cx="180" cy="52" rx="68" ry="20"/>
+    <ellipse cx="240" cy="44" rx="42" ry="16"/>
+    <ellipse cx="880" cy="44" rx="76" ry="18"/>
+    <ellipse cx="944" cy="54" rx="46" ry="14"/>
+  </g>
+  <path d="M0 178 L160 104 L300 172 L430 112 L570 182 L700 118 L840 176 L980 114 L1120 178 L1200 132 L1200 240 L0 240 Z" fill="url(#far)"/>
+  <path d="M0 206 L200 158 L380 206 L560 162 L740 210 L920 166 L1100 208 L1200 178 L1200 240 L0 240 Z" fill="url(#near)"/>
+  <g fill="#eef8f1" opacity="0.92">
+    <rect x="140" y="168" width="44" height="34"/>
+    <rect x="148" y="152" width="28" height="16"/>
+    <rect x="700" y="176" width="52" height="30"/>
+    <rect x="712" y="160" width="28" height="16"/>
+  </g>
+  <g>
+    <rect x="300" y="184" width="9" height="26" fill="#7a5a3a"/>
+    <circle cx="304" cy="180" r="22" fill="#3f8b57"/>
+    <rect x="940" y="188" width="9" height="24" fill="#7a5a3a"/>
+    <circle cx="944" cy="184" r="20" fill="#357a4b"/>
+  </g>
+</svg>

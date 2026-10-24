@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="翠林城 —— 我的世界城市反馈平台，发布城市要闻、服务指南与意见反馈。">
+<title>翠林城 · 主页</title>
+<link rel="icon" href="Img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="CSS/index-css.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">跳到主要内容</a>
+
+<header class="top-banner">
+  <img class="top-banner__bg" src="Img/banner.svg" alt="翠林城城市风貌">
+  <div class="top-banner__inner">
+    <div class="brand">
+      <img class="brand__mark" src="Img/favicon.svg" alt="翠林城图标" width="52" height="52">
+      <div class="brand__text">
+        <h1 class="brand__name">翠林城</h1>
+        <p class="brand__sub">翠林城 · 综合政务服务中心</p>
+      </div>
+    </div>
+    <div class="clock" id="siteClock">正在加载时间…</div>
+  </div>
+</header>
+
+<div class="toolbar">
+  <div class="toolbar__inner">
+    <nav class="main-nav" aria-label="主导航">
+      <ul>
+        <li><a href="index.html" class="active">主页</a></li>
+        <li><a href="pages/news.html">要闻</a></li>
+        <li><a href="pages/service.html">服务</a></li>
+        <li><a href="pages/feedback.html">反馈</a></li>
+        <li><a href="pages/about.html">关于</a></li>
+      </ul>
+    </nav>
+    <form class="search" id="searchForm" role="search">
+      <input type="search" id="searchInput" placeholder="搜索要闻…" aria-label="站内搜索" autocomplete="off">
+      <button type="submit">搜索</button>
+    </form>
+  </div>
+</div>
+
+<main class="container" id="main">
+  <div class="home-grid">
+
+    <!-- 左：要闻 -->
+    <section class="panel" id="news" aria-labelledby="newsTitle">
+      <div class="panel__head">
+        <h2 id="newsTitle">要闻</h2>
+        <a class="more" href="pages/news.html">全部要闻 &gt;</a>
+      </div>
+      <ul class="news-list" id="newsList">
+        <li class="empty">正在加载要闻…</li>
+      </ul>
+    </section>
+
+    <!-- 右：轮播（无标题栏，仅图片框 + 下方说明文字） -->
+    <section class="panel" aria-label="图片轮播">
+      <div class="carousel" id="carousel">
+        <div class="carousel__stage" id="carouselStage">
+          <div class="carousel__viewport" id="carouselViewport"></div>
+          <button class="carousel__arrow carousel__arrow--prev" id="prevBtn" type="button" aria-label="上一张">‹</button>
+          <button class="carousel__arrow carousel__arrow--next" id="nextBtn" type="button" aria-label="下一张">›</button>
+          <div class="carousel__dots" id="carouselDots" role="tablist" aria-label="轮播图切换"></div>
+        </div>
+        <div class="carousel__caption" id="carouselCaption"></div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-bottom">
+    <div class="footer-bottom__inner">
+      <p>翠林城市民服务中心</p>
+      <p class="footer-bottom__links">
+        <a href="pages/about.html">关于我们</a>
+        <a href="pages/feedback.html">意见反馈</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<noscript><div style="max-width:1160px;margin:20px auto;padding:14px 18px;background:#f2f9f4;border:1px solid #bfe0cb;color:#2b5e41;border-radius:6px;font-size:14px;">本站需要启用 JavaScript 才能加载要闻内容。</div></noscript>
+
+<script src="JS/common.js"></script>
+<script src="JS/index-js.js"></script>
+</body>
+</html>

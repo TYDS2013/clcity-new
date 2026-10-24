@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>公告通知 · 翠林城</title>
+<link rel="icon" href="../img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../CSS/index-css.css">
+</head>
+<body>
+<header class="top-banner top-banner--small">
+  <img class="top-banner__bg" src="../img/banner.svg" alt="翠林城城市风貌">
+  <div class="top-banner__inner">
+    <div class="brand">
+      <img class="brand__mark" src="../img/favicon.svg" alt="翠林城图标" width="44" height="44">
+      <div class="brand__text">
+        <h1 class="brand__name">翠林城</h1>
+        <p class="brand__sub">翠林城 · 综合政务服务中心</p>
+      </div>
+    </div>
+    <div class="clock" id="siteClock">正在加载时间…</div>
+  </div>
+</header>
+
+<div class="toolbar">
+  <div class="toolbar__inner">
+    <nav class="main-nav" aria-label="主导航">
+      <ul>
+        <li><a href="../index.html">首页</a></li>
+        <li><a href="../index.html#news">要闻</a></li>
+        <li><a href="notice.html">公告通知</a></li>
+        <li><a href="service.html">办事服务</a></li>
+        <li><a href="feedback.html">互动交流</a></li>
+        <li><a href="about.html">关于翠林</a></li>
+      </ul>
+    </nav>
+    <form class="search" onsubmit="location.href='../index.html';return false;">
+      <input type="search" placeholder="搜索要闻、公告…" aria-label="站内搜索">
+      <button type="submit">搜索</button>
+    </form>
+  </div>
+</div>
+
+<main class="container" id="main">
+  <nav class="breadcrumb"><a href="../index.html">首页</a> &gt; <span>公告通知</span></nav>
+
+  <section class="panel page-panel">
+    <div class="panel__head"><h2>公告通知</h2></div>
+    <div class="page-body">
+      <p class="note">本栏目用于发布翠林城的城市建设、交通调整、活动安排等公告信息。</p>
+
+      <h3>近期公告</h3>
+      <ul class="page-list">
+        <li><time>2026-10-20</time><a href="article.html?post=example.md">翠林城中央公园改造方案公开征求意见</a></li>
+        <li><time>2026-10-15</time><a href="#">关于 11 月城市维护施工期间临时交通调整的公告</a></li>
+        <li><time>2026-10-08</time><a href="#">翠林城轨道交通 2 号线运营时间调整通知</a></li>
+        <li><time>2026-09-28</time><a href="#">秋季市民文化节活动安排与场地开放时间</a></li>
+        <li><time>2026-09-20</time><a href="#">关于规范城区公共设施使用的倡议书</a></li>
+      </ul>
+
+      <h3>公告订阅</h3>
+      <p>如需第一时间获取公告信息，可前往 <a href="feedback.html">互动交流</a> 页面登记接收方式，我们将在公告发布后同步通知。</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-bottom">
+    <div class="footer-bottom__inner">
+      <p>翠林城市民服务中心</p>
+      <p class="footer-bottom__links">
+        <a href="about.html">关于我们</a>
+        <a href="notice.html">公告通知</a>
+        <a href="feedback.html">意见反馈</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script src="../JS/common.js"></script>
+<script>
+  (function(){var el=document.getElementById('siteClock');var W=['日','一','二','三','四','五','六'];
+  function p(n){return n<10?'0'+n:''+n;}
+  function t(){if(!el)return;var d=new Date();el.textContent=d.getFullYear()+'年'+(d.getMonth()+1)+'月'+d.getDate()+'日 星期'+W[d.getDay()]+' '+p(d.getHours())+':'+p(d.getMinutes())+':'+p(d.getSeconds());}
+  t();setInterval(t,1000);})();
+</script>
+</body>
+</html>
